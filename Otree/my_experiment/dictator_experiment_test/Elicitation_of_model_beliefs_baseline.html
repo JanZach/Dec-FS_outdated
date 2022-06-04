@@ -1,0 +1,17 @@
+{{ block title }}Model beliefs{{ endblock }}
+{{ block content }}
+    <p>
+
+        Please state how certain you are that the algorithm correctly predicts your decision.
+        Please state your answer on a scale from 1 (totally uncertain) to 7 (totally certain).
+    <p>
+
+    <p>
+        {{ formfield "belief_model_full" label="Belief about prediction" }}
+
+        {{ next_button }}
+    </p>
+    {{ include C.INSTRUCTIONS_TEMPLATE }}
+{{ endblock }}
+
+

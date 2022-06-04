@@ -1,0 +1,18 @@
+{{ block title }}Model beliefs{{ endblock }}
+{{ block content }}
+    <p>
+
+        Please state how certain you are that both the algorithm based on all attributes and the algorithm based on your selected attributes correctly predict your decision.
+        Please state your answer on a scale from 1 (totally uncertain) to 7 (totally certain).
+
+    <p>
+
+    <p>
+        {{ formfields }}
+
+        {{ next_button }}
+    </p>
+    {{ include C.INSTRUCTIONS_TEMPLATE }}
+{{ endblock }}
+
+

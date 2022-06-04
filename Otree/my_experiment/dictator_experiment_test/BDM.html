@@ -1,0 +1,26 @@
+{{ block title }}WTP Measure{{ endblock }}
+{{ block content }}
+   <p>Some text</p>
+    <p>
+        <input type="hidden" name="BDM_full" id="BDM_full">
+
+        <script>
+            let var slider = document.getElementById('BDM_full');
+
+            noUiSlider.create(slider, {
+                start: 50,
+                range: {
+                    'min': 20,
+                    'max': 80
+                }
+            });
+        </script>
+    </p>
+
+
+
+    {{ next_button }}
+
+    {{ include C.INSTRUCTIONS_TEMPLATE }}
+
+{{ endblock }}

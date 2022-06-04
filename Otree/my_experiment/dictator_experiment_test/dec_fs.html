@@ -1,0 +1,26 @@
+{{ block title }}Select attributes{{ endblock }}
+{{ block content }}
+    <p>
+
+        In addition to the before mentioned AI-based prediction, we will generate a second prediction about your payment decision. However, for the second prediction, you may decide which of your attributes are used by the Artificial Intelligence model.
+
+    <p>
+
+        Please decide which of your attributes are submitted to the AI model for the payment prediction:
+
+    <p>
+
+        {{ if player.treatment == 1 }}
+        <strong> Be aware that the algorithm tracks your decisions.
+            In other words: The fact that you wish to withhold certain features may affect the AI model's prediction about you. </strong>
+        {{ else }}
+        {{ endif }}
+
+        {{ formfields }}
+
+        {{ next_button }}
+    </p>
+    {{ include C.INSTRUCTIONS_TEMPLATE }}
+{{ endblock }}
+
+
